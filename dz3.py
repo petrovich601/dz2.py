@@ -94,21 +94,21 @@
 # для k = 8 список будет выглядеть так:
 # [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21] Негафибоначчи
 
-n = int(input('Введите число: '))
-if n == 0:
-    print(0)
-else:
-    nf = [1, 0]
-    for i in range(1, n+1):
-        nf.insert(i+1, ((nf[i]) + (nf[i-1])))
-    nf.remove(nf[0])
-    nfn =[0, 1]
-    for j in range(1, n):
-        nfn.insert(j+1, ((nfn[j-1]) - (nfn[j])))
-    nfn.remove(nf[0])
-    for k in range(n):
-        element = nfn.pop(n - 1 - k)
-        nfn.append(element)
-    for m in range(n+1):
-        nfn.append(nf[m])
-    print(nfn)
+# n = int(input('Введите число: '))
+# if n == 0:
+#     print(0)
+# else:
+#     nf = [1, 0]
+#     for i in range(1, n+1):
+#         nf.insert(i+1, ((nf[i]) + (nf[i-1])))
+#     nf.remove(nf[0])
+#     nfn =[0, 1]
+#     for j in range(1, n):
+#         nfn.insert(j+1, ((nfn[j-1]) - (nfn[j])))
+#     nfn.remove(nf[0])
+#     for k in range(n):
+#         element = nfn.pop(n - 1 - k)
+#         nfn.append(element)
+#     for m in range(n+1):
+#         nfn.append(nf[m])
+#     print(nfn)
